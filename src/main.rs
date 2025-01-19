@@ -60,9 +60,9 @@ fn merge(a:&mut [i8],l:usize,r:usize,n:usize){ //void merge(int a[], int l, int 
         a[c] = b[c];
     }
     //for c = l, c < r + 1, c+1 a[c] = b[c];
-
     //free(b); //not needed in rust
 }
+
 fn merge_sort(a: &mut [i8], n: usize, l: usize, r: usize) {
     if r - l == 1 {
         if a[l] > a[r] {
